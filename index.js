@@ -11,8 +11,16 @@
 $(document).ready(function(){
   $('.tooltipped').tooltip();
   $('.tooltip').tooltip('margin', 5);
+  
 });
       
+window.smoothScroll = function(target) {
+  
+  console.log(target)
+  $('html, body').animate({
+    scrollTop: $(target).offset().top
+}, 400);
+}
 //cursor animations 
 $(document)
   .mousemove(function(e) {
@@ -25,7 +33,10 @@ $(document)
     
   })
 
+
+
 //adjusting background color on navbar hovering
   $(".fixed-action-btn").mouseover(function(){ 
        
 });
+

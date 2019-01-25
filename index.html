@@ -3,7 +3,7 @@
   <title> Parth </title>
   <!-- sass -->
   <link rel='stylesheet' href = 'sassing/style.css'>
-
+  <link rel="icon" href="assets/PA_logo.png">
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -14,39 +14,32 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       
-  <!-- MUI Boilerplate -->
+  <!-- Material Boilerplate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
   
-  
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body> 
+  <!-- CONTAINER 1 -->
+  <div id = 'container_1'> 
   <!--Cursors-->
   <div class='cursor'></div>
-  <!--
-    <video autoplay muted loop id="video_bg">
-        <source src="assets/video_bg.mp4" type="video/mp4">
-      </video>
-    --> 
-      <!--
-      <div class="fullscreen-video-wrap">
-        <video src="assets/video_bg.mp4" autoplay muted loop playsinline>
-      </video>>
-      </div>
--->
-      
+ 
 <!--Nav Icons-->
 
 <div class="fixed-action-btn">
-    <a class="btn-floating btn-large cyan darken-2">
+    <a class="btn-floating btn-large black">
       <i class="large material-icons">menu</i> </a>
     
     <ul>    
-      <li><a href='mailto:parthahuj@gmail.com' class="btn-floating cyan lighten-3 tooltipped" data-position="bottom" data-tooltip="Email"><i class="material-icons">email</i></a> </li> 
-      <li><a href='https://www.linkedin.com/in/parth-ahuja-5838b8174/' class="btn-floating cyan lighten-1 tooltipped" data-position="bottom" data-tooltip="LinkedIn"><i class="material-icons">work</i></a> </li> 
-      <li><a href='https://www.GitHub.com/theoldclassified' class="btn-floating cyan tooltipped" data-position="bottom" data-tooltip="GitHub"><i class="material-icons">code</i></a> </li>
-      <li><a href ="https://drive.google.com/file/d/1gy1-KlP3d-mV1Nvi00e3MVQEazRPC5v0/view?usp=sharing" class="btn-floating cyan darken-1 tooltipped" data-position="bottom" data-tooltip="Resume"><i class="material-icons">attach_file</i></a> </li>
+      <li><a href='mailto:parthahuj@gmail.com' class="btn-floating black tooltipped" data-position="bottom" data-tooltip="Email"><i class="material-icons">email</i></a> </li> 
+      <li><a href='https://www.linkedin.com/in/parth-ahuja-5838b8174/' class="btn-floating black tooltipped" data-position="bottom" data-tooltip="LinkedIn"><i class="material-icons">work</i></a> </li> 
+      <li><a href='https://www.GitHub.com/theoldclassified' class="btn-floating black tooltipped" data-position="bottom" data-tooltip="GitHub"><i class="material-icons">code</i></a> </li>
+      <li><a href ="https://drive.google.com/file/d/1gy1-KlP3d-mV1Nvi00e3MVQEazRPC5v0/view?usp=sharing" class="btn-floating black tooltipped" data-position="bottom" data-tooltip="Resume"><i class="material-icons">attach_file</i></a> </li>
   </ul>
    
   </div>
@@ -63,5 +56,67 @@
 </div>
 
 <a href='mailto:parthahuj@gmail.com' class="waves-effect waves-teal btn-flat black-text talk"> Let's Talk</a>
+
+<div class = 'go_project'>
+  
+<a class="btn-floating btn-flat waves-effect cyan darken-1" onclick="smoothScroll(document.getElementById('go_project'))"><i class="material-icons"> expand_more </i></a>
+</div>
+</div>
+
+<!-- Projects CONTAINER -->
+<div class = 'projects' id= 'go_project'>
+  <div id = 'title'> 
+      Projects 
+  </div>
+  
+  <!-- CARD 1 -->
+ 
+        <div class="card card_1">
+          <div class="card-content black-text">
+            <span class="card-title">Wise Owl</span>
+            <p>An Image-Recognition desktop app that uses pre-trained and re-trained models in TensorFlow. Predictions are made using user-input image and results are provided on local server. 
+                Front-End made using bootstrap in Electron JS. 
+                Click Read More to see sample image results.   
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="wiseowl.html">Read More</a>
+            <a href="https://github.com/theoldclassified/wiseowl">Github</a>
+          </div>
+        </div>
+      
+        
+
+<!-- CARD 2 -->
+
+
+          <div class="card card_2">
+            <div class="card-content black-text">
+              <span class="card-title">Math Scrape</span>
+              <p>A Web-App that scrapes Math-Jax equation from websites. Scraping done headlessly using selenium + beautiful soup4 on Heroku. Front-End made in Vue JS deployed on FireBase. 
+                Click on FireBase Link to be redirected. Instructions available on Github link.
+              </p>
+            </div>
+            <div class="card-action"> 
+                <a href="https://mathscrape.firebaseapp.com/#/">FireBase Link</a>
+              <a href="https://github.com/theoldclassified/bsproject">Github</a>
+            </div>
+          </div>
+
+        <!-- CARD 3 -->
+        <div class="card card_3">
+          <div class="card-content black-text">
+            <span class="card-title">Schedule Control</span>
+            <p> An iOS app that allows user to input location based Schedule and predicts the next available time in the Schedule based on current location. 
+                Data stored using Realm in backend. Useful for storing schedules for Bus, Classes, etc. App Screenshots available on request.
+            </p>
+          </div>
+          <div class="card-action"> 
+              <a href="mailto:work@parthahuja.me?subject=Schedule Control SS"> ScreenShots</a>
+            <a href="https://github.com/theoldclassified/ScheduleControl">Github</a>
+          </div>
+        </div>
+</div>
+</div>
 
 </html>
