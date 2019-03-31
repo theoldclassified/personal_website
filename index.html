@@ -25,6 +25,9 @@
   <!-- NES.CSS -->
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+
+  <!-- Animate.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body> 
   <!-- CONTAINER 1 -->
@@ -59,10 +62,10 @@
   Parth Ahuja
 </div>
 </div>
-<div class="nes-container is-rounded is-dark">
+<div class="animated zoomIn nes-container is-rounded is-dark">
     <p>Hello Friend!</p>
     <div class='gridsystem'>
-    <i  class="nes-octocat animate is-small grid-item"></i>
+    <i  class="nes-octocat is-small grid-item"></i>
     <button onclick="location.href='https://github.com/theoldclassified'" type="button is-small grid-item" class="nes-btn is-success">GitHub</button>
     <i class="nes-icon gmail is-medium grid-item"></i>
     <button onclick="location.href='mailto:parthahuj@gmail.com'" type="button is-small grid-item" class="nes-btn is-success">Email</button>
@@ -70,6 +73,9 @@
     <button onclick="location.href='https://drive.google.com/file/d/1gy1-KlP3d-mV1Nvi00e3MVQEazRPC5v0/view?usp=sharing'" type="button is-small grid-item" class="nes-btn is-success">Resume</button>
     <i class="nes-pokeball is-small grid-item"></i>
     <button type="button is-small grid-item" class="nes-btn is-success" onclick="document.getElementById('dialog-default').showModal();">About Me</button> 
+    <i class="nes-icon trophy is-large grid-item"></i>
+    <button type="button is-small grid-item" class="nes-btn is-success" onclick="document.getElementById('dialog-projects').showModal();">Projects</button> 
+
   </div>
     <dialog class="nes-dialog" id="dialog-default">
         <form method="dialog">
@@ -84,6 +90,20 @@
       </dialog>
   </div>
 
+</div>
+<dialog class="nes-dialog" id="dialog-projects">
+    <form method="dialog">
+      <p class="title">Projects</p>
+      <button onclick="location.href='https://mathscrape.firebaseapp.com'" type="button" class="nes-btn is-small is-warning" margin ="8px">MathScrape</button> 
+      <button onclick="location.href='https://github.com/theoldclassified/wiseowl'" type="button" class="nes-btn is-warning" margin ="8px">WiseOwl</button> 
+      <button onclick="location.href='https://github.com/theoldclassified/ScheduleControl'"type="button" class="nes-btn is-warning" margin ="8px">Schedule Control</button> 
+      <menu class="dialog-menu">
+        <button class="nes-btn">Cancel</button>
+        <button class="nes-btn is-primary">Confirm</button>
+      </menu>
+    </form>
+  </dialog>
+</div>
 <!--
 <div class = 'go_project'>
   
@@ -92,61 +112,5 @@
 </div>
 -->
 <!-- Main UI -->
-
-<!-- Projects CONTAINER -->
-<div class = 'projects' id= 'go_project'>
-  <div id = 'title'> 
-      Projects 
-  </div>
-  
-  <!-- CARD 1 -->
- 
-        <div class="card card_1">
-          <div class="card-content black-text">
-            <span class="card-title">Wise Owl</span>
-            <p>An Image-Recognition desktop app that uses pre-trained and re-trained models in TensorFlow. Predictions are made using user-input image and results are provided on local server. 
-                Front-End made using bootstrap in Electron JS. 
-                Click Read More to see sample image results.   
-            </p>
-          </div>
-          <div class="card-action">
-            <a href="wiseowl.html">Read More</a>
-            <a href="https://github.com/theoldclassified/wiseowl">Github</a>
-          </div>
-        </div>
-      
-        
-
-<!-- CARD 2 -->
-
-
-          <div class="card card_2">
-            <div class="card-content black-text">
-              <span class="card-title">Math Scrape</span>
-              <p>A Web-App that scrapes Math-Jax equation from websites. Scraping done headlessly using selenium + beautiful soup4 on Heroku. Front-End made in Vue JS deployed on FireBase. 
-                Click on FireBase Link to be redirected. Instructions available on Github link.
-              </p>
-            </div>
-            <div class="card-action"> 
-                <a href="https://mathscrape.firebaseapp.com/#/">FireBase Link</a>
-              <a href="https://github.com/theoldclassified/bsproject">Github</a>
-            </div>
-          </div>
-
-        <!-- CARD 3 -->
-        <div class="card card_3">
-          <div class="card-content black-text">
-            <span class="card-title">Schedule Control</span>
-            <p> An iOS app that allows user to input location based Schedule and predicts the next available time in the Schedule based on current location. 
-                Data stored using Realm in backend. Useful for storing schedules for Bus, Classes, etc. App Screenshots available on request.
-            </p>
-          </div>
-          <div class="card-action"> 
-              <a href="mailto:work@parthahuja.me?subject=Schedule Control SS"> ScreenShots</a>
-            <a href="https://github.com/theoldclassified/ScheduleControl">Github</a>
-          </div>
-        </div>
-</div>
-</div>
 
 </html>
