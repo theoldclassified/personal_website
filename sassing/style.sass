@@ -2,6 +2,7 @@
   #beautiful sass <3
 ---
 body 
+  position: relative
   height: 100% 
   overflow-y: auto
   overflow-x: hidden
@@ -15,7 +16,7 @@ body
   padding: 10px 10px
 
 #container_1
-  background-image: url("/assets/bg_image.jpeg")
+  background-image: url("/assets//hills.png")
   height: 100vh
   width: 100%
   background-size: cover
@@ -23,15 +24,15 @@ body
   background-repeat: no-repeat
 
 #sub_text
-  position: relative
   font-family: 'Oswald', sans-serif
-  margin-left: 677px 
-  margin-top: 394px
+  font-size: 5vw
+  right: 0
+  top: 60
 
 #name
   position: absolute
   font-family: 'Oswald', sans-serif
-  font-size:  25px  
+  font-size:  6vw 
   top: 0
   left: 0 
 
@@ -77,15 +78,36 @@ body
 @media only screen and (min-device-width: 320px)
   #hello_world
     font-size: 22vw
+  #name
+    font-size: 6vw
+  .nes-container
+    height: 30%
+    width: 50%
+    top: 70
+    left: 50
+
 //tablets
 @media only screen and (min-device-width: 768px)
   #hello_world
     font-size: 16vw
+  #name
+    font-size: 7vw
+  .nes-container
+    height: 30%
+    width: 50%
+    top: 70
+    left: 50
 //desktops
 @media only screen and (min-device-width: 992px)
   #hello_world
     font-size: 11vw
-
+  #name
+    font-size: 4vw
+  .nes-container
+    height: 60%
+    width: 50%
+    top: 70
+    left: 50
 #hello_world:hover
   background-size: 100% 88%
 
@@ -129,5 +151,26 @@ body
   left: 69%
   top: -40.4%
   
+.nes-container
+  top: 31%
+  left: 26%
 
+  margin: -70px 0 0 -170px
 
+.gridsystem
+  display: grid
+  grid-template-columns: 200px 200px
+  grid-row: auto auto
+  grid-column-gap: -3px
+  grid-row-gap: 20px
+
+.grid-item
+  display: flex
+  align-items: center
+  justify-content: center
+
+.nes-icon
+  left: 22
+
+.nes-pokeball
+  left: 8

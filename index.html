@@ -22,6 +22,9 @@
   <!-- Scroll Reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
+  <!-- NES.CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
 </head>
 <body> 
   <!-- CONTAINER 1 -->
@@ -44,24 +47,51 @@
    
   </div>
 
+<div class="row">
+<div class="col s12 right-align">
 <div id='hello_world'>
     Hello World
-    </div>
-  <div id='sub_text'>
-    I am a Human who likes 
-    to Code, Design, and Pet cats.
   </div>
+</div>
+<div class="col s6 offset-s6">
+</div>
 <div id='name'>
   Parth Ahuja
 </div>
+</div>
+<div class="nes-container is-rounded is-dark">
+    <p>Hello Friend!</p>
+    <div class='gridsystem'>
+    <i  class="nes-octocat animate is-small grid-item"></i>
+    <button onclick="location.href='https://github.com/theoldclassified'" type="button is-small grid-item" class="nes-btn is-success">GitHub</button>
+    <i class="nes-icon gmail is-medium grid-item"></i>
+    <button onclick="location.href='mailto:parthahuj@gmail.com'" type="button is-small grid-item" class="nes-btn is-success">Email</button>
+    <i class="nes-icon coin is-medium grid-item"></i>
+    <button onclick="location.href='https://drive.google.com/file/d/1gy1-KlP3d-mV1Nvi00e3MVQEazRPC5v0/view?usp=sharing'" type="button is-small grid-item" class="nes-btn is-success">Resume</button>
+    <i class="nes-pokeball is-small grid-item"></i>
+    <button type="button is-small grid-item" class="nes-btn is-success" onclick="document.getElementById('dialog-default').showModal();">About Me</button> 
+  </div>
+    <dialog class="nes-dialog" id="dialog-default">
+        <form method="dialog">
+          <p class="title">About me</p>
+          <p>I am a sophomore studying Computer Science at University at Buffalo. I love making and breaking new stuff!</p>
+        <img src='assets/profile.png' width="300" height ="300">
+          <menu class="dialog-menu">
+            <button class="nes-btn">Cancel</button>
+            <button class="nes-btn is-primary">Confirm</button>
+          </menu>
+        </form>
+      </dialog>
+  </div>
 
-<a href='mailto:parthahuj@gmail.com' class="waves-effect waves-teal btn-flat black-text talk"> Let's Talk</a>
-
+<!--
 <div class = 'go_project'>
   
 <a class="btn-floating btn-flat waves-effect cyan darken-1" onclick="smoothScroll(document.getElementById('go_project'))"><i class="material-icons"> expand_more </i></a>
 </div>
 </div>
+-->
+<!-- Main UI -->
 
 <!-- Projects CONTAINER -->
 <div class = 'projects' id= 'go_project'>
