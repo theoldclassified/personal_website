@@ -6,6 +6,13 @@ body
   height: 100% 
   overflow-y: auto
   overflow-x: hidden
+  
+  background-image: url("/assets//hills.jpg")
+  height: 100vh
+  width: 100%
+  background-size: cover
+  position: fixed
+  background-repeat: no-repeat
 .cursor
   position: relative
   height: 10px
@@ -14,166 +21,51 @@ body
   border-width: 1px
   border-style: solid
   padding: 10px 10px
+  color: white
 
-#container_1
-  background-image: url("/assets//hills.png")
-  height: 100vh
-  width: 100%
-  background-size: cover
+.name
+  color: white
+  font-family: 'Arapey', serif
+  font-size: 10vw
   position: fixed
-  background-repeat: no-repeat
-
-#sub_text
-  font-family: 'Oswald', sans-serif
-  font-size: 5vw
-  right: 0
-  top: 60
-
-#name
-  position: absolute
-  font-family: 'Oswald', sans-serif
-  font-size:  6vw 
-  top: 0
-  left: 0 
-
-.material-icons
-  position: relative
-
-.fixed-action-btn 
-  position: relative
-  top: 1% 
-  margin-right: -1.5%
-
-*
-  -webkit-touch-callout: none 
-  -webkit-user-select: none 
-  -khtml-user-select: none 
-  -moz-user-select: none 
-  -ms-user-select: none 
-  user-select: none 
+  top: 20%
+  left: 50%
   
-.material-tooltip 
-  transform: translateY(20px) translateX(0px) !important
 
-.talk
+.sub_text
+  color: white
+  font-family: 'Arapey', serif
+  font-size: 2.6vw
   position: relative
-  margin-top: 1%
-  margin-left: 51.6%
-  font-family: 'Oswald', sans-serif 
-  font-size: 50px
+  text-align: right
 
-#hello_world
-  position: absolute
-  font-family: 'Oswald', sans-serif 
-  font-size: 143px
-  right: 0
-  top: 50  
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)
-  background-repeat: no-repeat
-  background-size: 100% 0.2em
-  background-position: 0 88% 
-  transition: background-size 0.25s ease-in
+.nav
+  cursor: pointer
+  color: white
+  font-size: 25px
+  font-family: 'Arapey', serif
+  font-weight: bold
 
-//mobile etc.
-@media only screen and (min-device-width: 320px)
-  #hello_world
-    font-size: 22vw
-  #name
-    font-size: 6vw
-  .nes-container
-    height: 30%
-    width: 50%
-    top: 38%
-    left: 50
-
-//tablets
-@media only screen and (min-device-width: 768px)
-  #hello_world
-    font-size: 16vw
-  #name
-    font-size: 7vw
-  .nes-container
-    height: 30%
-    width: 50%
-    top: 70
-    left: 50
-//desktops
-@media only screen and (min-device-width: 992px)
-  #hello_world
-    font-size: 11vw
-  #name
-    font-size: 4vw
-  .nes-container
-    height: 63%
-    width: 50%
-    top: 70
-    left: 50
-#hello_world:hover
-  background-size: 100% 88%
-
-.go_project
-  position: fixed
-  margin-top: 10%
-  margin-left: 50%
-  color: teal
+.nav-link
   
-//PROJECTS SECTION 
+  color: white
+  text-decoration: none
+
+.nav>li>a:focus, .nav>li>a:hover
+  text-decoration: none
+  color: inherit
+  cursor: pointer
 
 .projects
-  position: absolute
-  top: 100%
-  width: 100% 
-  height: 100vh
-  background-color: #8AEEF2
-  overflow: hidden
-  
-
-
-#title 
-  position: absolute
-  font-family: 'Oswald', sans-serif 
-  font-size: 145px
-  left: 34%
-  top: -3%
-  
-.card_1
-  width: 30%
-  
-  left: 35.5%
-  top: 42.5%
-.card_2 
-  width: 30%
-  left: 1%
-  top: 1%
-
-.card_3 
-  width: 30%
-  left: 69%
-  top: -40.4%
-  
-.nes-container
-  top: 31%
-  left: 26%
-
-  margin: -70px 0 0 -170px
-
-.gridsystem
-  display: grid
-  grid-template-columns: 200px 200px
-  grid-row: auto auto
-  grid-column-gap: -3px
-  grid-row-gap: 20px
-
-.grid-item
-  display: flex
-  align-items: center
-  justify-content: center
-
-.nes-icon
-  left: 22
-
-.nes-pokeball
-  left: 8
-
-.nes-btn
-  margin: 8px
+  color: black
+  text-aling: center
+  margin-top: 10%
+  font-size: 25px
+  font-family: 'Arapey', serif
+.projects:hover 
+  text-decoration: none
+  color: inherit
+  cursor: pointer
+.title_project
+  font-family: 'Arapey', serif
+  font-size: 25px
