@@ -1,17 +1,18 @@
 ---
   #beautiful sass <3
 ---
-body 
-  position: relative
-  height: 100% 
+html, body
+  height: 100%
+  margin: 0 
+  scroll-snap-type: y mandatory
+  overflow-y: scroll
+.section_1 
+  scroll-snap-align: start
   overflow-y: auto
   overflow-x: hidden
-  
   background-image: url("/assets//hills.jpg")
   height: 100vh
-  width: 100%
   background-size: cover
-  position: fixed
   background-repeat: no-repeat
 .cursor
   position: relative
@@ -30,7 +31,6 @@ body
   position: fixed
   top: 20%
   left: 50%
-  
 
 .sub_text
   color: white
@@ -38,11 +38,14 @@ body
   font-size: 2.6vw
   position: relative
   text-align: right
-
+.explore
+  transform: translateY(1400%)
+  top: 20%
+  left: 50%
 .nav
   cursor: pointer
   color: white
-  font-size: 25px
+  font-size: 2.6vw
   font-family: 'Arapey', serif
   font-weight: bold
 
@@ -69,3 +72,60 @@ body
 .title_project
   font-family: 'Arapey', serif
   font-size: 25px
+
+.section_2
+  scroll-snap-align: start
+  overflow: auto
+  overflow-x: hidden
+  position: sticky
+  background-image: url("/assets//sched_control.png")
+  height: 100vh
+  background-size: cover
+  background-repeat: no-repeat
+.section_3
+  scroll-snap-align: start
+  overflow: auto
+  overflow-x: hidden
+  position: sticky
+  background-image: url("/assets//mathscrape.png")
+  height: 100vh
+  background-size: cover
+  background-repeat: no-repeat
+.section_4
+  scroll-snap-align: start
+  overflow: auto
+  overflow-x: hidden
+  position: sticky
+  background-image: url("/assets//wiseowl.png")
+  height: 100vh
+  background-size: cover
+  background-repeat: no-repeat
+#project_title 
+  font-family: 'Arapey', serif
+  font-size: 7vw
+  color: white
+  margin-left: 4%
+#project_desc
+  font-family: 'Arapey', serif
+  font-size: 2.6vw
+  color: white
+  margin-left: 4%
+
+.project_button
+  margin-top: 5% 
+  margin-left: 5%
+@media (max-width: 800px)
+  .nav
+    font-size: 5vw
+  .sub_text
+    font-size: 5vw
+    position: fixed 
+  .name
+    font-size: 10.5vw
+  #project_title 
+    font-size: 10vw
+  #project_desc
+    font-size: 5vw
+  .project_button
+    margin-top: 15%
+  
