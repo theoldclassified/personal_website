@@ -1,1 +1,1 @@
-https://parthahuja.me
+https://parthahuja.dev
